@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+      <style>
+          button{
+              background-color: #e99ec8;
+              font-size: 1.5rem;
+              border-radius: 25px;
+              width: 150px;
+              height: 40px;
+          }
+      </style>
+  </head>
+  <body>
+<button id="b1">GET</button>
+<button id="b2">POST</button>
+<button id="b3">PUT</button>
+<button id="b4">DELETE</button>
+<div id="info"></div>
+    <script>
+      (function () {
+          document.getElementById("b1").addEventListener("click", () => {
+            fetch("/api/pulpits", {
+              method: "GET",
+              headers: {
+                "Content-Type": "application/json;charset=utf-8"
+              }
+            })
+              .then(response => {
+                if (response.status !== 200) {
+                  console.log(
+                    "Looks like there was a problem. Status Code: " + response.status
+                  );
+                } else {
+                  return response.json();
+                }
+              })
+              .then(json => {
+                console.log(JSON.stringify(json));
+                document.getElementById("info").innerHTML = JSON.stringify(json);
+              });
+          });
+
+          document.getElementById("b2").addEventListener("click", () => {
+            fetch("/api/pulpits", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json;charset=utf-8"
+              },
+              body: `{"pulpit":"test", "pulpit_name": "test","faculty": "ИТ" }`
+            })
+              .then(response => {
+                if (response.status !== 200) {
+                  console.log(
+                    "Looks like there was a problem. Status Code: " + response.status
+                  );
+                } else {
+                  return response.json();
+                }
+              })
+              .then(json => {
+                console.log(JSON.stringify(json));
+                document.getElementById("info").innerHTML = JSON.stringify(json);
+              });
+          });
+
+          document.getElementById("b3").addEventListener("click", () => {
+            fetch("/api/pulpits", {
+              method: "PUT",
+              headers: {
+                "Content-Type": "application/json;charset=utf-8"
+              },
+              body: `{"pulpit":"test1", "pulpit_name": "test","faculty": "ИТ" }`
+            })
+              .then(response => {
+                if (response.status !== 200) {
+                  console.log(
+                    "Looks like there was a problem. Status Code: " + response.status
+                  );
+                } else {
+                  return response.json();
+                }
+              })
+              .then(json => {
+                console.log(JSON.stringify(json));
+                document.getElementById("info").innerHTML = JSON.stringify(json);
+              });
+          });
+
+          document.getElementById("b4").addEventListener("click", () => {
+            fetch("/api/pulpits/krek", {
+              method: "DELETE",
+              headers: {
+                "Content-Type": "application/json;charset=utf-8"
+              },
+              body: `{"pulpit":"test1", "pulpit_name": "test","faculty": "ИТ" }`
+            })
+              .then(response => {
+                if (response.status !== 200) {
+                  console.log(
+                    "Looks like there was a problem. Status Code: " + response.status
+                  );
+                } else {
+                  return response.text();
+                }
+              })
+              .then(json => {
+                console.log(json);
+                document.getElementById("info").innerHTML = json;
+              });
+          });
+        })();
+    </script>
+  </body>
+</html>

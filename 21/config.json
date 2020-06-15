@@ -1,0 +1,13 @@
+{
+  "server": {
+    "port": 3000,
+    "session": {
+      "resave": false,
+      "saveUninitialized": false,
+      "secret": "rdqcfgwbjdkqbnwhdbqjwkdqwfkjwnegejrng"
+    }
+  },
+  "forms": {
+    "secret": "qwcvyghbjkmljhgfcxrtcyughnjomkmklnbu"
+  }
+}

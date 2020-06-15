@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8625a924-0040-4975-8108-61d0bb0375eb" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1WZcAaPPhUqBj2ENFqaKUeOzJDe" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.10.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../2 сем/node.js/Lab18" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="server.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8625a924-0040-4975-8108-61d0bb0375eb" name="Default Changelist" comment="" />
+      <created>1579360414769</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579360414769</updated>
+      <workItem from="1579360416174" duration="4478000" />
+      <workItem from="1579386269452" duration="268000" />
+      <workItem from="1579389317214" duration="40000" />
+      <workItem from="1579426446861" duration="108000" />
+      <workItem from="1579474741883" duration="44000" />
+      <workItem from="1579502269756" duration="2194000" />
+      <workItem from="1581096260044" duration="2190000" />
+      <workItem from="1581098751839" duration="24000" />
+      <workItem from="1592138010807" duration="724000" />
+      <workItem from="1592240574553" duration="2984000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

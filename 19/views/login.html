@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <style>
+        * {box-sizing: border-box;}
+
+        /* Add padding to containers */
+        .container {
+            padding: 16px;
+        }
+
+        /* Full-width input fields */
+        input[type=text] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            border-radius: 25px;
+        }
+
+        input[type=text]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Overwrite default styles of hr */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* Set a style for the submit/register button */
+        .registerbtn {
+            background-color: #eb9aed;
+            color: black;
+            padding: 20px 20px;
+            margin: 8px 0;
+            border: solid;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.6;
+            border-radius: 25px;
+        }
+
+        .registerbtn:hover {
+            opacity:1;
+        }
+
+        /* Add a blue text color to links */
+        a {
+            color: black;
+        }
+
+        .signin:hover {
+            opacity:1;
+        }
+        .signin {
+            background-color: #eb9aed;
+            text-align: center;
+            padding: 20px 20px;
+            margin: 8px 0;
+            border: solid;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.6;
+            border-radius: 25px;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<form action="/login" method="post">
+    <div class="container">
+        <h1 style="text-align:center ">FORM LOGIN</h1>
+        <p style="text-align:center ">Please fill in this form to login</p>
+        <hr>
+
+        <label>
+            <b>First Name</b>
+            <input type="text" placeholder="Enter First Name" name="firstName" required>
+        </label>
+
+        <label>
+            <b>Last Name</b>
+            <input type="text" placeholder="Enter Last Name" name="lastName" required>
+        </label>
+        <hr>
+
+        <button type="submit" class="registerbtn">Login</button>
+    </div>
+
+    <div class="container signin">
+        <p>Don't have the account? <a href="/register">Sign up</a>.</p>
+    </div>
+</form>
+
+</body>
+</html>
